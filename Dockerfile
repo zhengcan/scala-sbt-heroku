@@ -21,7 +21,8 @@ VOLUME /root/code
 #	&& gitlab-runner start
 
 COPY example /root/example
-RUN bash /root/example/run-all
+RUN cd /root/example \
+	&& bash run-all
 
 
 
