@@ -1,4 +1,4 @@
-lazy val `play-java-2.6` = (project in file("."))
+lazy val `play-java-2_6` = (project in file("."))
 	.enablePlugins(PlayJava, PlayEbean)
 	.settings(
 		libraryDependencies ++= Seq(

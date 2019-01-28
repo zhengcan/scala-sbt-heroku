@@ -1,0 +1,14 @@
+#!/bin/bash
+
+pwd=`pwd`
+for file in ./play-*
+do
+  file=$pwd/$file
+  if test -d $file
+  then
+  	echo Build $file ...
+    cd $file
+    sbt stage clean
+  fi
+done
+

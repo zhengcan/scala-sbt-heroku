@@ -21,9 +21,7 @@ VOLUME /root/code
 #	&& gitlab-runner start
 
 COPY example /root/example
-RUN cd /root/example \
-	&& sbt stage \
-	&& sbt clean
+RUN bash /root/example/run-all
 
 
 
