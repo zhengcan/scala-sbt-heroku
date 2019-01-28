@@ -8,7 +8,7 @@ do
   then
   	echo Build $file ...
     cd $file
-    sbt stage clean
+    sbt "+stage" clean
   fi
 done
 
