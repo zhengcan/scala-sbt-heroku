@@ -9,9 +9,9 @@ ENV HEROKU_API_KEY=changeme
 RUN	apt update \
 	&& apt upgrade --yes \
 	&& curl https://cli-assets.heroku.com/install.sh | sh \
-	&& mkdir ~/code
+	&& mkdir /root/code
 
-VOLUME ~/code
+VOLUME /root/code
 
 # RUN curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | bash \
 #	&& apt install gitlab-runner --yes --allow-unauthenticated \
@@ -20,8 +20,8 @@ VOLUME ~/code
 #	&& gitlab-runner install --user root \
 #	&& gitlab-runner start
 
-COPY example ~/example
-RUN cd ~/example \
+COPY example /root/example
+RUN cd /root/example \
 	&& sbt stage \
 	&& sbt clean
 
