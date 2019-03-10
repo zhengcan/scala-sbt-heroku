@@ -1,7 +1,7 @@
 // Play
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.7.0")
 // Akka gRPC
-addSbtPlugin("com.lightbend.akka.grpc" % "sbt-akka-grpc" % "0.4.2")
+addSbtPlugin("com.lightbend.akka.grpc" % "sbt-akka-grpc" % "0.6.0")
 addSbtPlugin("com.lightbend.sbt" % "sbt-javaagent" % "0.1.4") // ALPN agent
 // Ebean
 addSbtPlugin("com.typesafe.sbt" % "sbt-play-ebean" % "5.0.1")

@@ -22,7 +22,8 @@ VOLUME /root/code
 
 COPY example /root/example
 RUN cd /root/example \
-	&& bash run-all
+	&& bash run-all \
+	&& rm -rf /root/example
 
 
 
